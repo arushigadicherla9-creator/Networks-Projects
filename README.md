@@ -25,12 +25,8 @@ If you use this repository in any fashion in your own work, please cite our work
 |---|---|
 | `data/` | Raw and cleaned datasets (flight data, measles cases, MMR vaccination coverage) |
 | `code/` | Python scripts for data cleaning, network construction, and network analysis |
-| `<FLIGHT DATA FILE>` | 2025 BTS domestic flight data with passengers, origin, and destination |
-| `<MEASLES DATA FILE>` | 2025 confirmed measles cases by county, from the JHU Measles Tracking Team |
-| `<MMR DATA FILE>` | 2024–2025 county-level MMR vaccination coverage from Dong et al. (2025) |
-| `<CLEANING SCRIPT>` | Removes zero-passenger flights, unused columns, and null values; filters to 2025 |
-| `<NETWORK SCRIPT>` | Builds the airport-level network and aggregates it to the state level |
-| `<ANALYSIS SCRIPT>` | Calculates degree, weighted degree, betweenness centrality, and effective distance |
+| `output/` | Python scripts for cleaned data and any data analysis |
+| `figure/` | Images of figures we have in our manuscript, including the explainer figure |
 | `requirements.txt` | Python packages needed to run the code |
 
 ## Data sources
