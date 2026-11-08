@@ -1,6 +1,8 @@
-# YOUR TITLE HERE
+# Title 
 
-The repository contains code accompanying the following paper: <AUTHOR LIST>, TITLE (<YEAR>).
+The repository contains code accompanying the following paper: Cody Chhea, Arushi Gadicherla, and Lisa Hires, *Measles Transmission Risk Through the U.S. Flight Network and State-Level Vaccination Coverage* (2026).
+
+This project builds a directed, weighted network of 2025 U.S. domestic air travel and combines it with state-level MMR vaccination coverage and confirmed 2025 measles cases. Airports are first connected by edges weighted by annual passenger volume, then aggregated into a state-level network. We use network measures (degree, weighted degree, betweenness centrality, and effective distance) to examine whether states with high flight connectivity and low vaccination coverage face greater measles transmission risk.
 
 If you use this repository in any fashion in your own work, please cite our work according to the `CITATION.cff`.
 
@@ -9,7 +11,8 @@ If you use this repository in any fashion in your own work, please cite our work
 - [Contents](#contents)
 - [Getting Started](#getting-started)
   - [Repository layout](#repository-layout)
-  - [Installing](#installing)
+  - [Data sources](#data-sources)
+  - [Installation](#installation)
 - [Other Information](#other-information)
   - [Authors](#authors)
   - [License](#license)
@@ -20,7 +23,19 @@ If you use this repository in any fashion in your own work, please cite our work
 
 | Path | Role |
 |---|---|
-| `<FILENAME HERE>` | <WHAT THE FILE IS OR WHAT IT DOES> |
+| `data/` | Raw and cleaned datasets (flight data, measles cases, MMR vaccination coverage) |
+| `code/` | Python scripts for data cleaning, network construction, and network analysis |
+| `output/` | Python scripts for cleaned data and any data analysis |
+| `figure/` | Images of figures we have in our manuscript, including the explainer figure |
+| `requirements.txt` | Python packages needed to run the code |
+
+## Data sources
+
+| Dataset | Source | Link |
+|---|---|---|
+| 2025 domestic flights (BTS2025) | U.S. Bureau of Transportation Statistics | https://www.transtats.bts.gov/ |
+| 2025 confirmed measles cases | JHU Measles Tracking Team Data Repository at Johns Hopkins University | https://github.com/CSSEGISandData/measles_data |
+| 2024–2025 MMR vaccination coverage | Dong et al., "Trends in County-Level MMR Vaccination Coverage in Children in the United States," *JAMA* (2025) | https://github.com/CSSEGISandData/MMR_data |
 
 ## Installation
 
@@ -32,10 +47,11 @@ pip install -r requirements.txt
 
 ## Authors
 
-- <AUTHOR 1>
-- <AUTHOR 2>
-- <AUTHOR 3>
-- <AUTHOR 4>
+- Cody Chhea (psh7rp@virginia.edu)
+- Arushi Gadicherla (yte6zv@virginia.edu)
+- Lisa Hires (uar2aw@virginia.edu)
+
+Department of Biology, University of Virginia
 
 ## License
 
