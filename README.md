@@ -2,7 +2,7 @@
 
 The repository contains code accompanying the following paper: Cody Chhea, Arushi Gadicherla, and Lisa Hires, *Measles Transmission Risk Through the U.S. Flight Network and State-Level Vaccination Coverage* (2026).
 
-This project builds a directed, weighted network of 2025 U.S. domestic air travel and combines it with county-level MMR vaccination coverage and confirmed 2025 measles cases. Airports are first connected by edges weighted by annual passenger volume. Measles cases are then assigned to an airport by the shortest distance between the county of the confirmed case and the nearest airport. The counties which aggregate to when airport have MMR vaccination rates which are averaged to find the MMR vaccination rate for the airport and its surrounding area.  
+This project builds a directed, weighted network of 2025 U.S. domestic air travel and combines it with county-level MMR vaccination coverage and confirmed 2025 measles cases. Airports are first connected by edges weighted by annual passenger volume. Measles cases are then assigned to an airport by the shortest distance between the county of the confirmed case and the nearest airport. The MMR vaccination rate for an airport and its surrounding area is determined by averaging the county-level MMR vaccination rates for each county aggregated to a given airport.  
 
 We use various measures (total measles cases, centrality, effective distance, air traffic trends, etc.) to examine whether airports (and their associated counties) with high flight connectivity and low vaccination coverage face greater measles transmission risk.
 
